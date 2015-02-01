@@ -12,7 +12,9 @@
 		F155BAA11A7EB0E3004AFC2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F155BA9F1A7EB0E3004AFC2E /* Main.storyboard */; };
 		F155BAA31A7EB0E3004AFC2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F155BAA21A7EB0E3004AFC2E /* Images.xcassets */; };
 		F155BAA61A7EB0E3004AFC2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F155BAA41A7EB0E3004AFC2E /* LaunchScreen.xib */; };
-		F155BAB21A7EB0E3004AFC2E /* CountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155BAB11A7EB0E3004AFC2E /* CountdownTests.swift */; };
+		F155BABD1A7EE599004AFC2E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155BABC1A7EE599004AFC2E /* ViewControllerTests.swift */; };
+		F155BABF1A7EE715004AFC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155BA9D1A7EB0E3004AFC2E /* ViewController.swift */; };
+		F155BAC01A7EE8F1004AFC2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F155BA9F1A7EB0E3004AFC2E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,7 @@
 		F155BAA51A7EB0E3004AFC2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F155BAAB1A7EB0E3004AFC2E /* CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F155BAB01A7EB0E3004AFC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F155BAB11A7EB0E3004AFC2E /* CountdownTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTests.swift; sourceTree = "<group>"; };
+		F155BABC1A7EE599004AFC2E /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,8 @@
 		F155BAAE1A7EB0E3004AFC2E /* CountdownTests */ = {
 			isa = PBXGroup;
 			children = (
-				F155BAB11A7EB0E3004AFC2E /* CountdownTests.swift */,
 				F155BAAF1A7EB0E3004AFC2E /* Supporting Files */,
+				F155BABC1A7EE599004AFC2E /* ViewControllerTests.swift */,
 			);
 			path = CountdownTests;
 			sourceTree = "<group>";
@@ -202,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F155BAC01A7EE8F1004AFC2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +224,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F155BAB21A7EB0E3004AFC2E /* CountdownTests.swift in Sources */,
+				F155BABF1A7EE715004AFC2E /* ViewController.swift in Sources */,
+				F155BABD1A7EE599004AFC2E /* ViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -369,6 +374,8 @@
 				INFOPLIST_FILE = CountdownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countdown.app/Countdown";
 			};
 			name = Debug;
@@ -377,6 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -384,6 +392,7 @@
 				INFOPLIST_FILE = CountdownTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Countdown.app/Countdown";
 			};
 			name = Release;
