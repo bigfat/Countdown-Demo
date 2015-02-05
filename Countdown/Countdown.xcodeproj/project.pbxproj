@@ -15,6 +15,19 @@
 		F155BABD1A7EE599004AFC2E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155BABC1A7EE599004AFC2E /* ViewControllerTests.swift */; };
 		F155BABF1A7EE715004AFC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155BA9D1A7EB0E3004AFC2E /* ViewController.swift */; };
 		F155BAC01A7EE8F1004AFC2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F155BA9F1A7EB0E3004AFC2E /* Main.storyboard */; };
+		F1C56EB91A82AF35009EA3A9 /* MockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EB81A82AF35009EA3A9 /* MockPresenter.swift */; };
+		F1C56EBB1A82AF51009EA3A9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EBA1A82AF51009EA3A9 /* Presenter.swift */; };
+		F1C56EBD1A82AF70009EA3A9 /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EBC1A82AF70009EA3A9 /* PresenterTests.swift */; };
+		F1C56EBE1A82AFAD009EA3A9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EBA1A82AF51009EA3A9 /* Presenter.swift */; };
+		F1C56EC01A82B0BC009EA3A9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EBF1A82B0BC009EA3A9 /* View.swift */; };
+		F1C56EC11A82B15B009EA3A9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EBF1A82B0BC009EA3A9 /* View.swift */; };
+		F1C56EC31A82B1AD009EA3A9 /* MockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EC21A82B1AD009EA3A9 /* MockView.swift */; };
+		F1C56EC51A82B371009EA3A9 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EC41A82B371009EA3A9 /* Interactor.swift */; };
+		F1C56EC71A82B387009EA3A9 /* InteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EC61A82B387009EA3A9 /* InteractorTests.swift */; };
+		F1C56EC81A82B38B009EA3A9 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EC41A82B371009EA3A9 /* Interactor.swift */; };
+		F1C56ECA1A82B3B1009EA3A9 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EC91A82B3B1009EA3A9 /* Wireframe.swift */; };
+		F1C56ECB1A82B3B1009EA3A9 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EC91A82B3B1009EA3A9 /* Wireframe.swift */; };
+		F1C56ECD1A82B3BE009EA3A9 /* WireframeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56ECC1A82B3BE009EA3A9 /* WireframeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +51,15 @@
 		F155BAAB1A7EB0E3004AFC2E /* CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F155BAB01A7EB0E3004AFC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F155BABC1A7EE599004AFC2E /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		F1C56EB81A82AF35009EA3A9 /* MockPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPresenter.swift; sourceTree = "<group>"; };
+		F1C56EBA1A82AF51009EA3A9 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		F1C56EBC1A82AF70009EA3A9 /* PresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
+		F1C56EBF1A82B0BC009EA3A9 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F1C56EC21A82B1AD009EA3A9 /* MockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockView.swift; sourceTree = "<group>"; };
+		F1C56EC41A82B371009EA3A9 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		F1C56EC61A82B387009EA3A9 /* InteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorTests.swift; sourceTree = "<group>"; };
+		F1C56EC91A82B3B1009EA3A9 /* Wireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
+		F1C56ECC1A82B3BE009EA3A9 /* WireframeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireframeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +103,10 @@
 			children = (
 				F155BA9B1A7EB0E3004AFC2E /* AppDelegate.swift */,
 				F155BA9D1A7EB0E3004AFC2E /* ViewController.swift */,
+				F1C56EBF1A82B0BC009EA3A9 /* View.swift */,
+				F1C56EBA1A82AF51009EA3A9 /* Presenter.swift */,
+				F1C56EC41A82B371009EA3A9 /* Interactor.swift */,
+				F1C56EC91A82B3B1009EA3A9 /* Wireframe.swift */,
 				F155BA9F1A7EB0E3004AFC2E /* Main.storyboard */,
 				F155BAA21A7EB0E3004AFC2E /* Images.xcassets */,
 				F155BAA41A7EB0E3004AFC2E /* LaunchScreen.xib */,
@@ -102,6 +128,11 @@
 			children = (
 				F155BAAF1A7EB0E3004AFC2E /* Supporting Files */,
 				F155BABC1A7EE599004AFC2E /* ViewControllerTests.swift */,
+				F1C56EBC1A82AF70009EA3A9 /* PresenterTests.swift */,
+				F1C56EC61A82B387009EA3A9 /* InteractorTests.swift */,
+				F1C56ECC1A82B3BE009EA3A9 /* WireframeTests.swift */,
+				F1C56EB81A82AF35009EA3A9 /* MockPresenter.swift */,
+				F1C56EC21A82B1AD009EA3A9 /* MockView.swift */,
 			);
 			path = CountdownTests;
 			sourceTree = "<group>";
@@ -215,6 +246,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C56EC01A82B0BC009EA3A9 /* View.swift in Sources */,
+				F1C56EBB1A82AF51009EA3A9 /* Presenter.swift in Sources */,
+				F1C56ECA1A82B3B1009EA3A9 /* Wireframe.swift in Sources */,
+				F1C56EC51A82B371009EA3A9 /* Interactor.swift in Sources */,
 				F155BA9E1A7EB0E3004AFC2E /* ViewController.swift in Sources */,
 				F155BA9C1A7EB0E3004AFC2E /* AppDelegate.swift in Sources */,
 			);
@@ -224,8 +259,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1C56ECB1A82B3B1009EA3A9 /* Wireframe.swift in Sources */,
 				F155BABF1A7EE715004AFC2E /* ViewController.swift in Sources */,
+				F1C56EB91A82AF35009EA3A9 /* MockPresenter.swift in Sources */,
+				F1C56EC31A82B1AD009EA3A9 /* MockView.swift in Sources */,
+				F1C56EC81A82B38B009EA3A9 /* Interactor.swift in Sources */,
+				F1C56EC11A82B15B009EA3A9 /* View.swift in Sources */,
+				F1C56EBD1A82AF70009EA3A9 /* PresenterTests.swift in Sources */,
+				F1C56ECD1A82B3BE009EA3A9 /* WireframeTests.swift in Sources */,
 				F155BABD1A7EE599004AFC2E /* ViewControllerTests.swift in Sources */,
+				F1C56EC71A82B387009EA3A9 /* InteractorTests.swift in Sources */,
+				F1C56EBE1A82AFAD009EA3A9 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +460,7 @@
 				F155BAB71A7EB0E3004AFC2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F155BAB81A7EB0E3004AFC2E /* Build configuration list for PBXNativeTarget "CountdownTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +469,7 @@
 				F155BABA1A7EB0E3004AFC2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

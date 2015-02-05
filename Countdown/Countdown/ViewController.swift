@@ -8,9 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, View {
 
     @IBOutlet var datePicker: UIDatePicker?
+    @IBOutlet var startButton: UIButton?
+    
+    var presenter: Presenter! = nil
+    
+    var currentSelectedDate: NSDate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +28,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func datePickerPickedDate(sender: AnyObject) {
-        
+        currentSelectedDate = datePicker?.date
     }
-
+    
+    @IBAction func startButtonDidTap(sender: AnyObject) {
+        presenter.startDidtap()
+    }
+    
+    //MARK: View Protocol
+    
+    func currentPickedDate() -> NSDate {
+        return currentSelectedDate!
+    }
+    
 }
 

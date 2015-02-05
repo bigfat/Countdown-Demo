@@ -25,6 +25,15 @@
                                     <action selector="datePickerPickedDate:" destination="BYZ-38-t0r" eventType="valueChanged" id="09s-Ri-KSh"/>
                                 </connections>
                             </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wrf-Vr-QEO">
+                                <rect key="frame" x="285" y="400" width="31" height="30"/>
+                                <state key="normal" title="start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ugm-uN-rGA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -35,6 +44,7 @@
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="AUQ-Do-t1b" id="ReC-w4-v22"/>
+                        <outlet property="startButton" destination="Wrf-Vr-QEO" id="GnC-xf-Uk0"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="bfx-Kc-m2H"/>
                     </connections>
                 </viewController>

@@ -42,5 +42,38 @@ class ViewControllerTests: XCTestCase {
         }
     }
     
+    func testHasStartButton() {
+        XCTAssertNotNil(viewController.startButton, "Should have a startButotn")
+    }
+    
+    func testStartButtonHasAction() {
+        let actions = viewController.startButton?.actionsForTarget(viewController, forControlEvent: .TouchUpInside) as? [String]
+        
+        if let actions_ = actions {
+            let hasAction = contains(actions!, "startButtonDidTap:")
+            XCTAssertTrue(hasAction)
+        } else {
+            XCTAssertTrue(false)
+        }
+    }
+    
+    func testPassStart() {
+        let mockPresenter = MockPresenter()
+        viewController.presenter = mockPresenter
+        viewController.startButtonDidTap(viewController.startButton!)
+        XCTAssertTrue(mockPresenter.startButtonTapped)
+    }
+    
+    func testConformsToViewProtocol() {
+        let conforms = viewController.respondsToSelector(Selector("currentPickedDate"))
+        XCTAssertTrue(conforms)
+    }
+    
+    func testSendsBackCorrectDate() {
+        viewController.datePicker?.date = NSDate(timeIntervalSince1970: 0)
+        viewController.datePickerPickedDate(viewController.datePicker!)
+        let testDate = viewController.currentPickedDate()
+        XCTAssertEqual(testDate, NSDate(timeIntervalSince1970: 0))
+    }
     
 }
