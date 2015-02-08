@@ -15,7 +15,16 @@ class Presenter: NSObject, InteractorDelegate {
     var interactor: Interactor!
     
     func startDidtap() {
+        interactor.startCountdown()
+    }
+    
+    func pickedDate() -> NSDate {
         let date = view.currentPickedDate()
+        return NSDate()
+    }
+    
+    func updateCountdown(countdown: NSTimeInterval) {
+        
     }
     
 }

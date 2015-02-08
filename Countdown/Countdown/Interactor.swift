@@ -9,11 +9,22 @@
 import UIKit
 
 protocol InteractorDelegate: class {
-    
+    func pickedDate() -> NSDate
+    func updateCountdown(countdown: NSTimeInterval)
 }
 
 class Interactor: NSObject {
 
     var delegate: InteractorDelegate?
     
+    func startCountdown() {
+        sendCountdown()
+    }
+    
+    func sendCountdown() {
+        if let date = delegate?.pickedDate() {
+            let countDown = CountDownClock.countDownToDate(date)
+            delegate?.updateCountdown(countDown)
+        }
+    }
 }

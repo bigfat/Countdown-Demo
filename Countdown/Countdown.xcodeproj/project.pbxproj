@@ -15,6 +15,10 @@
 		F155BABD1A7EE599004AFC2E /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155BABC1A7EE599004AFC2E /* ViewControllerTests.swift */; };
 		F155BABF1A7EE715004AFC2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F155BA9D1A7EB0E3004AFC2E /* ViewController.swift */; };
 		F155BAC01A7EE8F1004AFC2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F155BA9F1A7EB0E3004AFC2E /* Main.storyboard */; };
+		F167AE5D1A865B63004682B2 /* MockInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167AE5C1A865B63004682B2 /* MockInteractor.swift */; };
+		F167AE7C1A87B51C004682B2 /* CountDownClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167AE7B1A87B51C004682B2 /* CountDownClock.swift */; };
+		F167AE7D1A87B520004682B2 /* CountDownClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167AE7B1A87B51C004682B2 /* CountDownClock.swift */; };
+		F167AE7F1A87B532004682B2 /* CountDownClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F167AE7E1A87B532004682B2 /* CountDownClockTests.swift */; };
 		F1C56EB91A82AF35009EA3A9 /* MockPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EB81A82AF35009EA3A9 /* MockPresenter.swift */; };
 		F1C56EBB1A82AF51009EA3A9 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EBA1A82AF51009EA3A9 /* Presenter.swift */; };
 		F1C56EBD1A82AF70009EA3A9 /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1C56EBC1A82AF70009EA3A9 /* PresenterTests.swift */; };
@@ -51,6 +55,9 @@
 		F155BAAB1A7EB0E3004AFC2E /* CountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F155BAB01A7EB0E3004AFC2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F155BABC1A7EE599004AFC2E /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		F167AE5C1A865B63004682B2 /* MockInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockInteractor.swift; sourceTree = "<group>"; };
+		F167AE7B1A87B51C004682B2 /* CountDownClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownClock.swift; sourceTree = "<group>"; };
+		F167AE7E1A87B532004682B2 /* CountDownClockTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountDownClockTests.swift; sourceTree = "<group>"; };
 		F1C56EB81A82AF35009EA3A9 /* MockPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPresenter.swift; sourceTree = "<group>"; };
 		F1C56EBA1A82AF51009EA3A9 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		F1C56EBC1A82AF70009EA3A9 /* PresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
@@ -107,6 +114,7 @@
 				F1C56EBA1A82AF51009EA3A9 /* Presenter.swift */,
 				F1C56EC41A82B371009EA3A9 /* Interactor.swift */,
 				F1C56EC91A82B3B1009EA3A9 /* Wireframe.swift */,
+				F167AE7B1A87B51C004682B2 /* CountDownClock.swift */,
 				F155BA9F1A7EB0E3004AFC2E /* Main.storyboard */,
 				F155BAA21A7EB0E3004AFC2E /* Images.xcassets */,
 				F155BAA41A7EB0E3004AFC2E /* LaunchScreen.xib */,
@@ -133,6 +141,8 @@
 				F1C56ECC1A82B3BE009EA3A9 /* WireframeTests.swift */,
 				F1C56EB81A82AF35009EA3A9 /* MockPresenter.swift */,
 				F1C56EC21A82B1AD009EA3A9 /* MockView.swift */,
+				F167AE5C1A865B63004682B2 /* MockInteractor.swift */,
+				F167AE7E1A87B532004682B2 /* CountDownClockTests.swift */,
 			);
 			path = CountdownTests;
 			sourceTree = "<group>";
@@ -252,6 +262,7 @@
 				F1C56EC51A82B371009EA3A9 /* Interactor.swift in Sources */,
 				F155BA9E1A7EB0E3004AFC2E /* ViewController.swift in Sources */,
 				F155BA9C1A7EB0E3004AFC2E /* AppDelegate.swift in Sources */,
+				F167AE7C1A87B51C004682B2 /* CountDownClock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F167AE5D1A865B63004682B2 /* MockInteractor.swift in Sources */,
 				F1C56ECB1A82B3B1009EA3A9 /* Wireframe.swift in Sources */,
 				F155BABF1A7EE715004AFC2E /* ViewController.swift in Sources */,
 				F1C56EB91A82AF35009EA3A9 /* MockPresenter.swift in Sources */,
+				F167AE7F1A87B532004682B2 /* CountDownClockTests.swift in Sources */,
 				F1C56EC31A82B1AD009EA3A9 /* MockView.swift in Sources */,
 				F1C56EC81A82B38B009EA3A9 /* Interactor.swift in Sources */,
+				F167AE7D1A87B520004682B2 /* CountDownClock.swift in Sources */,
 				F1C56EC11A82B15B009EA3A9 /* View.swift in Sources */,
 				F1C56EBD1A82AF70009EA3A9 /* PresenterTests.swift in Sources */,
 				F1C56ECD1A82B3BE009EA3A9 /* WireframeTests.swift in Sources */,
@@ -387,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Countdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -397,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Countdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

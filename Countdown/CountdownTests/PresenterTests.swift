@@ -11,8 +11,14 @@ import XCTest
 
 class PresenterTests: XCTestCase {
 
+    let presenter = Presenter()
+    let mockView = MockView()
+    let mockInteractor = MockInteractor()
+    
     override func setUp() {
         super.setUp()
+        presenter.view = mockView
+        presenter.interactor = mockInteractor
     }
     
     override func tearDown() {
@@ -20,10 +26,12 @@ class PresenterTests: XCTestCase {
     }
 
     func testAsksForCurrentDate() {
-        let presenter = Presenter()
-        let mockView = MockView()
-        presenter.view = mockView;
-        presenter.startDidtap()
+        presenter.pickedDate()
         XCTAssertTrue(mockView.currentPickedDateCalled)
+    }
+    
+    func testAskForCountdownStart() {
+        presenter.startDidtap()
+        XCTAssertTrue(mockInteractor.startCountDownCalled)
     }
 }

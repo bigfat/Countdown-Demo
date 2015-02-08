@@ -16,4 +16,19 @@ class MockPresenter: Presenter {
         startButtonTapped = true
     }
     
+    var pickedDateCalled = false
+    
+    override func pickedDate() -> NSDate {
+        pickedDateCalled = true
+        return NSDate(timeIntervalSinceNow: 86400)
+    }
+    
+    var updateCountdownCalled = false
+    var countDownArgument: NSTimeInterval = 0
+    
+    override func updateCountdown(countdown: NSTimeInterval) {
+        updateCountdownCalled = true
+        countDownArgument = countdown
+    }
+    
 }
